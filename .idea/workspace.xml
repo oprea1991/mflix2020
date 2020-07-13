@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d312477-6c5a-48bb-b8ba-893686ab118d" name="Default Changelist" comment="Setup Mflix Application">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capture.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mflix.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/Migrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/controllers/ApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/controllers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/controllers/MovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/AbstractMFlixDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/CommentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/IncorrectDaoOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/MovieDocumentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/daos/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/AbstractMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Critic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/IMDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/MovieTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/RottenTomatoes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/UserRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/models/ViewerRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/security/JWTAuthEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/services/MoviesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/services/TokenAuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/api/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/config/MongoDBConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mflix/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/precache-manifest.6ccc5d9cf53e6be4b234d7a437bb9000.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/service-worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/css/main.2637239d.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/css/main.2637239d.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/2.dc8c00c7.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/2.dc8c00c7.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/main.de4ec786.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/main.de4ec786.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/runtime~main.a8a9905a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/js/runtime~main.a8a9905a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/media/mongoleaf.0ebc1843.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/build/static/media/pixelatedLeaf.6c93bd20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionPoolingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/ConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/DeleteCommentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/FacetedSearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/GetCommentsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/HandlingErrorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/MigrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/PagingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/ProjectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TextAndSubfieldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TicketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/TimeoutsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UpdateCreateCommentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserPreferencesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/api/daos/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/AbstractLesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicDeletes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicReads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/BasicWrites.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/ChangeStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/CursorMethodsAndAggEquivalents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/ErrorHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/MongoClientLesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/QueryBuilders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/UpdateOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/UsingAggregationBuilders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/UsingPojoLesson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/utils/ActorBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/utils/ActorCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/utils/ActorWithStringId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/utils/ChangeStreamsInsertAndUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mflix/lessons/utils/StringObjectIdCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/precache-manifest.6ccc5d9cf53e6be4b234d7a437bb9000.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/service-worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/css/main.2637239d.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/css/main.2637239d.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/2.dc8c00c7.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/2.dc8c00c7.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/main.de4ec786.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/main.de4ec786.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/runtime~main.a8a9905a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/js/runtime~main.a8a9905a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/media/mongoleaf.0ebc1843.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/build/static/media/pixelatedLeaf.6c93bd20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/Migrator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/ApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/MovieController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/controllers/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/AbstractMFlixDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/CommentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/IncorrectDaoOperation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/MovieDocumentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/daos/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/AbstractMovie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Credentials.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Critic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/IMDB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Movie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/MovieTitle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/RottenTomatoes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/Session.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/UserPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/UserRegistry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/models/ViewerRating.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/security/JWTAuthEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/security/JWTAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/MoviesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/TokenAuthenticationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/api/services/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/config/MongoDBConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mflix/config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2020-07-13T15-49-19_617.dumpstream" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ConnectionPoolingTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ConnectionTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.DeleteCommentTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.FacetedSearchTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.GetCommentsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.HandlingErrorsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.MigrationTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.PagingTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.ProjectionTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.TextAndSubfieldTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.TimeoutsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UpdateCreateCommentTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UserPreferencesTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UserReportTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mflix.api.daos.UserTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ConnectionPoolingTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ConnectionTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.DeleteCommentTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.FacetedSearchTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.GetCommentsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.HandlingErrorsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.MigrationTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.PagingTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.ProjectionTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.TextAndSubfieldTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.TimeoutsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UpdateCreateCommentTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UserPreferencesTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UserReportTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/mflix.api.daos.UserTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ConnectionPoolingTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ConnectionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/DeleteCommentTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/FacetedSearchTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/GetCommentsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/HandlingErrorsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/MigrationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/PagingTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/ProjectionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TextAndSubfieldTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TicketTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/TimeoutsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UpdateCreateCommentTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserPreferencesTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserReportTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/api/daos/UserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/AbstractLesson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/BasicDeletes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/BasicReads.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/BasicWrites.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ChangeStreams.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/CursorMethodsAndAggEquivalents.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/ErrorHandling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/MongoClientLesson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/QueryBuilders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/UpdateOperators.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/UsingAggregationBuilders.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/UsingPojoLesson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ActorBasic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ActorCodec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ActorWithStringId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/ChangeStreamsInsertAndUpdate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/mflix/lessons/utils/StringObjectIdCodec.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1edHIz4n9Dm6FRBIFUzOZsGyPtN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mflix.Application" />
+      <module name="mflix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mflix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in mflix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mflix" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.All in mflix" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d312477-6c5a-48bb-b8ba-893686ab118d" name="Default Changelist" comment="" />
+      <created>1594644473851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594644473851</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Setup Mflix Application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Mflix Application" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="617" y="214" key="#Project_Structure" timestamp="1594644535611">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="214" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1594644535611" />
+    <state x="590" y="150" key="CommitChangelistDialog2" timestamp="1594645112670">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="590" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112670" />
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1594645112736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
+    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1594645112736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
+    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1594645112736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
+    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1594645112736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1594645215376">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1594645215376" />
+    <state x="716" y="290" key="VcsDiffUtil.ChangesDialog" timestamp="1594645149104">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="716" y="290" key="VcsDiffUtil.ChangesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1594645149104" />
+  </component>
+</project>
