@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d312477-6c5a-48bb-b8ba-893686ab118d" name="Default Changelist" comment="" />
+    <list default="true" id="7d312477-6c5a-48bb-b8ba-893686ab118d" name="Default Changelist" comment="Solves Issue #4 Projection">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1edHIz4n9Dm6FRBIFUzOZsGyPtN" />
@@ -42,10 +50,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in mflix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoClientLesson.MongoClientInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mflix" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mflix.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mflix.lessons" />
+      <option name="MAIN_CLASS_NAME" value="mflix.lessons.MongoClientLesson" />
+      <option name="METHOD_NAME" value="MongoClientInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoClientLesson.MongoDatabaseInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mflix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mflix.lessons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mflix.lessons" />
+      <option name="MAIN_CLASS_NAME" value="mflix.lessons.MongoClientLesson" />
+      <option name="METHOD_NAME" value="MongoDatabaseInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mflix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mflix.api.daos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mflix.api.daos" />
+      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.ProjectionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectionTest.testProjectionShape" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mflix" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mflix.api.daos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mflix.api.daos" />
+      <option name="MAIN_CLASS_NAME" value="mflix.api.daos.ProjectionTest" />
+      <option name="METHOD_NAME" value="testProjectionShape" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -53,7 +116,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.All in mflix" />
+        <item itemvalue="JUnit.ProjectionTest" />
+        <item itemvalue="JUnit.ProjectionTest.testProjectionShape" />
+        <item itemvalue="JUnit.MongoClientLesson.MongoDatabaseInstance" />
+        <item itemvalue="JUnit.MongoClientLesson.MongoClientInstance" />
       </list>
     </recent_temporary>
   </component>
@@ -87,43 +153,77 @@
       <option name="project" value="LOCAL" />
       <updated>1594645426084</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup Mflix Application">
+      <created>1594645550707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594645550707</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Solves Issue #4 Projection">
+      <created>1594654255626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594654255626</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Solves Issue #4 Projection">
+      <created>1594654353735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594654353735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Setup Mflix Application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Mflix Application" />
+    <MESSAGE value="Solves Issue #4 Projection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solves Issue #4 Projection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="617" y="214" key="#Project_Structure" timestamp="1594644535611">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="617" y="214" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1594644535611" />
-    <state x="590" y="150" key="CommitChangelistDialog2" timestamp="1594645424935">
+    <state x="93" y="93" width="1862" height="926" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1594651755399">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="590" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1594645424935" />
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom" timestamp="1594645112736">
+    <state x="93" y="93" width="1862" height="926" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1594651755399" />
+    <state x="590" y="150" key="CommitChangelistDialog2" timestamp="1594654441935">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
-    <state width="2005" height="305" key="GridCell.Tab.0.center" timestamp="1594645112736">
+    <state x="590" y="150" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1594654441935" />
+    <state x="198" y="105" width="1638" height="918" key="DiffContextDialog" timestamp="1594654208359">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
-    <state width="2005" height="305" key="GridCell.Tab.0.left" timestamp="1594645112736">
+    <state x="198" y="105" width="1638" height="918" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1594654208359" />
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1594654184460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
-    <state width="2005" height="305" key="GridCell.Tab.0.right" timestamp="1594645112736">
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1594654184460" />
+    <state width="1480" height="305" key="GridCell.Tab.0.bottom" timestamp="1594654338819">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594645112736" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1594645438232">
+    <state width="1480" height="305" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1594654338819" />
+    <state width="1480" height="305" key="GridCell.Tab.0.center" timestamp="1594654338819">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1594645438232" />
+    <state width="1480" height="305" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1594654338819" />
+    <state width="1480" height="305" key="GridCell.Tab.0.left" timestamp="1594654338819">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1480" height="305" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1594654338819" />
+    <state width="1480" height="305" key="GridCell.Tab.0.right" timestamp="1594654338819">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1480" height="305" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1594654338819" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1594654606344">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1594654606344" />
     <state x="716" y="290" key="VcsDiffUtil.ChangesDialog" timestamp="1594645149104">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
