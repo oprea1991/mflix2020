@@ -24,14 +24,14 @@ public class UsingAggregationBuilders extends AbstractLesson {
   aggregation framework pipelines using the Java Driver aggregation builders
    */
 
-  @Test
-  public void singleStageAggregation() {
+    @Test
+    public void singleStageAggregation() {
     /*
     First we are going to see the how to create a single stage aggregation.
     In this case, I would like to know how many movies have been
     produced/shot in Portugal.
      */
-    String country = "Portugal";
+        String country = "Portugal";
 
     /*
     And I'm going to use the MongoDB aggregation framework.
@@ -41,8 +41,8 @@ public class UsingAggregationBuilders extends AbstractLesson {
     db.movies.aggregate([{$match: {countries: "Portugal"}}])
      */
 
-    // express the match criteria
-    Bson countryPT = Filters.eq("countries", country);
+        // express the match criteria
+        Bson countryPT = Filters.eq ( "countries" , country );
 
     /*
     The aggregation() collection method takes a list of Bson objects that
@@ -50,7 +50,7 @@ public class UsingAggregationBuilders extends AbstractLesson {
     set using an ArrayList.
      */
 
-    List<Bson> pipeline = new ArrayList<>();
+        List<Bson> pipeline = new ArrayList<> ();
 
     /*
     Instead of manually constructing the Bson document
@@ -67,17 +67,17 @@ public class UsingAggregationBuilders extends AbstractLesson {
     the ones we would use in the case of find() command.
     */
 
-    Bson matchStage = Aggregates.match(countryPT);
+        Bson matchStage = Aggregates.match ( countryPT );
 
-    // add the matchStage to the pipeline
-    pipeline.add(matchStage);
+        // add the matchStage to the pipeline
+        pipeline.add ( matchStage );
 
     /*
     Once we've appended the match stage to the pipeline array, we can
     then execute the aggregate() collection command.
     */
 
-    AggregateIterable<Document> iterable = moviesCollection.aggregate(pipeline);
+        AggregateIterable<Document> iterable = moviesCollection.aggregate ( pipeline );
 
     /*
     As a result of the aggregate() method, we get back an
@@ -85,18 +85,18 @@ public class UsingAggregationBuilders extends AbstractLesson {
      to iterate over the result set.
     */
 
-    // collect all movies into an array list
-    List<Document> builderMatchStageResults = new ArrayList<>();
-    iterable.into(builderMatchStageResults);
+        // collect all movies into an array list
+        List<Document> builderMatchStageResults = new ArrayList<> ();
+        iterable.into ( builderMatchStageResults );
 
     /*
     Which should produce a list of 115 movies produced in Portugal.
      */
-    Assert.assertEquals(115, builderMatchStageResults.size());
-  }
+        Assert.assertEquals ( 115 , builderMatchStageResults.size () );
+    }
 
-  @Test
-  public void aggregateSeveralStages() {
+    @Test
+    public void aggregateSeveralStages() {
     /*
     A single aggregation pipeline, and in particular a $match stage,
     could be achieve by using the find() command. So let's use something
@@ -104,7 +104,7 @@ public class UsingAggregationBuilders extends AbstractLesson {
     aggregation framework for.
      */
 
-    List<Bson> pipeline = new ArrayList<>();
+        List<Bson> pipeline = new ArrayList<> ();
 
     /*
     For all movies produced in Portugal, sum the number of times
@@ -125,21 +125,21 @@ public class UsingAggregationBuilders extends AbstractLesson {
     /*
     - $match to find all movies produced in portugal
      */
-    String country = "Portugal";
-    Bson countryPT = Filters.eq("countries", country);
-    Bson matchStage = Aggregates.match(countryPT);
+        String country = "Portugal";
+        Bson countryPT = Filters.eq ( "countries" , country );
+        Bson matchStage = Aggregates.match ( countryPT );
 
     /*
     - $unwind the elements of the $cast array
      */
-    Bson unwindCastStage = Aggregates.unwind("$cast");
+        Bson unwindCastStage = Aggregates.unwind ( "$cast" );
 
     /*
     - $group based on cast name and count the number of times a cast
     member appears in the result set
      */
-    // group by cast members
-    String groupIdCast = "$cast";
+        // group by cast members
+        String groupIdCast = "$cast";
 
     /*
     Group operations are in place to do some sort of accumulation
@@ -150,38 +150,38 @@ public class UsingAggregationBuilders extends AbstractLesson {
     operations.
      */
 
-    // use $sum accumulator to sum 1 for each cast member appearance.
-    BsonField sum1 = Accumulators.sum("count", 1);
+        // use $sum accumulator to sum 1 for each cast member appearance.
+        BsonField sum1 = Accumulators.sum ( "count" , 1 );
 
-    // adding both group _id and accumulators
-    Bson groupStage = Aggregates.group(groupIdCast, sum1);
+        // adding both group _id and accumulators
+        Bson groupStage = Aggregates.group ( groupIdCast , sum1 );
 
     /*
     - $sort based on the new computed field `gigs`
      */
 
-    // create the sort order using Sorts builder
-    Bson sortOrder = Sorts.descending("count");
-    // pass the sort order to the sort stage builder
-    Bson sortStage = Aggregates.sort(sortOrder);
+        // create the sort order using Sorts builder
+        Bson sortOrder = Sorts.descending ( "count" );
+        // pass the sort order to the sort stage builder
+        Bson sortStage = Aggregates.sort ( sortOrder );
 
     /*
     With all these stages, we are now ready to call our aggregate method
     with a bit more complex of a pipeline than a single $match stage.
      */
 
-    pipeline.add(matchStage);
-    pipeline.add(unwindCastStage);
-    pipeline.add(groupStage);
-    pipeline.add(sortStage);
+        pipeline.add ( matchStage );
+        pipeline.add ( unwindCastStage );
+        pipeline.add ( groupStage );
+        pipeline.add ( sortStage );
 
-    AggregateIterable<Document> iterable = moviesCollection.aggregate(pipeline);
+        AggregateIterable<Document> iterable = moviesCollection.aggregate ( pipeline );
 
-    List<Document> groupByResults = new ArrayList<>();
-    for (Document doc : iterable) {
-      System.out.println(doc);
-      groupByResults.add(doc);
-    }
+        List<Document> groupByResults = new ArrayList<> ();
+        for (Document doc : iterable) {
+            System.out.println ( doc );
+            groupByResults.add ( doc );
+        }
 
     /*
     The aggregation framework also provides stages that combine
@@ -191,35 +191,35 @@ public class UsingAggregationBuilders extends AbstractLesson {
     Don't believe me? Well, let's check it out!
      */
 
-    List<Bson> shorterPipeline = new ArrayList<>();
+        List<Bson> shorterPipeline = new ArrayList<> ();
 
-    // we already have built booth $match and $unwind stages
-    shorterPipeline.add(matchStage);
-    shorterPipeline.add(unwindCastStage);
+        // we already have built booth $match and $unwind stages
+        shorterPipeline.add ( matchStage );
+        shorterPipeline.add ( unwindCastStage );
 
-    // create the $sortByCountStage
-    Bson sortByCount = Aggregates.sortByCount("$cast");
+        // create the $sortByCountStage
+        Bson sortByCount = Aggregates.sortByCount ( "$cast" );
 
-    // append $sortByCount stage to shortPipeline
-    shorterPipeline.add(sortByCount);
+        // append $sortByCount stage to shortPipeline
+        shorterPipeline.add ( sortByCount );
 
-    // list to collect shorterPipeline results
-    List<Document> sortByCountResults = new ArrayList<>();
+        // list to collect shorterPipeline results
+        List<Document> sortByCountResults = new ArrayList<> ();
 
-    for (Document doc : moviesCollection.aggregate(shorterPipeline)) {
-      System.out.println(doc);
-      sortByCountResults.add(doc);
-    }
+        for (Document doc : moviesCollection.aggregate ( shorterPipeline )) {
+            System.out.println ( doc );
+            sortByCountResults.add ( doc );
+        }
 
     /*
     Running both pipelines, the same set of results.
      */
 
-    Assert.assertEquals(groupByResults, sortByCountResults);
-  }
+        Assert.assertEquals ( groupByResults , sortByCountResults );
+    }
 
-  @Test
-  public void complexStages() {
+    @Test
+    public void complexStages() {
 
     /*
     Not all aggregation stages are made equal. There are ones that are
@@ -246,7 +246,7 @@ public class UsingAggregationBuilders extends AbstractLesson {
 
      */
 
-    List<Bson> pipeline = new ArrayList<>();
+        List<Bson> pipeline = new ArrayList<> ();
 
     /*
     To exemplify this scenario, let's go ahead and do the following:
@@ -259,11 +259,11 @@ public class UsingAggregationBuilders extends AbstractLesson {
     For each facet we are going to create a com.mongodb.client.Facet object.
      */
 
-    // $unwind the cast array
-    Bson unwindCast = Aggregates.unwind("$cast");
+        // $unwind the cast array
+        Bson unwindCast = Aggregates.unwind ( "$cast" );
 
-    // create a set of cast members with $group
-    Bson groupCastSet = Aggregates.group("", Accumulators.addToSet("cast_list", "$cast"));
+        // create a set of cast members with $group
+        Bson groupCastSet = Aggregates.group ( "" , Accumulators.addToSet ( "cast_list" , "$cast" ) );
 
     /*
     Facet constructor takes a facet name and variable arguments,
@@ -273,22 +273,22 @@ public class UsingAggregationBuilders extends AbstractLesson {
     to create a set of cast members.
      */
 
-    Facet castMembersFacet = new Facet("cast_members", unwindCast, groupCastSet);
+        Facet castMembersFacet = new Facet ( "cast_members" , unwindCast , groupCastSet );
 
-    // unwind genres
-    Bson unwindGenres = Aggregates.unwind("$genres");
+        // unwind genres
+        Bson unwindGenres = Aggregates.unwind ( "$genres" );
 
-    // genres facet bucket
-    Bson genresSortByCount = Aggregates.sortByCount("$genres");
+        // genres facet bucket
+        Bson genresSortByCount = Aggregates.sortByCount ( "$genres" );
 
-    // create a genres count facet
-    Facet genresCountFacet = new Facet("genres_count", unwindGenres, genresSortByCount);
+        // create a genres count facet
+        Facet genresCountFacet = new Facet ( "genres_count" , unwindGenres , genresSortByCount );
 
-    // year bucketAuto
-    Bson yearBucketStage = Aggregates.bucketAuto("$year", 10);
+        // year bucketAuto
+        Bson yearBucketStage = Aggregates.bucketAuto ( "$year" , 10 );
 
-    // year bucket facet
-    Facet yearBucketFacet = new Facet("year_bucket", yearBucketStage);
+        // year bucket facet
+        Facet yearBucketFacet = new Facet ( "year_bucket" , yearBucketStage );
 
     /*
     The Aggregates.facet() method also takes variable set of Facet
@@ -305,24 +305,24 @@ public class UsingAggregationBuilders extends AbstractLesson {
       ])
      */
 
-    // $facets stage
-    Bson facetsStage = Aggregates.facet(castMembersFacet, genresCountFacet, yearBucketFacet);
+        // $facets stage
+        Bson facetsStage = Aggregates.facet ( castMembersFacet , genresCountFacet , yearBucketFacet );
 
-    // match stage
-    Bson matchStage = Aggregates.match(Filters.eq("countries", "Portugal"));
+        // match stage
+        Bson matchStage = Aggregates.match ( Filters.eq ( "countries" , "Portugal" ) );
 
-    // putting it all together
-    pipeline.add(matchStage);
-    pipeline.add(facetsStage);
+        // putting it all together
+        pipeline.add ( matchStage );
+        pipeline.add ( facetsStage );
 
-    int countDocs = 0;
-    for (Document doc : moviesCollection.aggregate(pipeline)) {
-      System.out.println(doc);
-      countDocs++;
+        int countDocs = 0;
+        for (Document doc : moviesCollection.aggregate ( pipeline )) {
+            System.out.println ( doc );
+            countDocs++;
+        }
+
+        Assert.assertEquals ( 1 , countDocs );
     }
-
-    Assert.assertEquals(1, countDocs);
-  }
 
   /*
   Let's recap:
