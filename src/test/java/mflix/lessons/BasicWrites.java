@@ -188,7 +188,7 @@ public class BasicWrites extends AbstractLesson {
     // Another component of the update or insert, upsert, is that we can
     // set values just in case we are inserting.
     // Let's say we want add a field called, just_inserted, if the
-    // document did not existed before, but do not set it if the document
+    // document did not exist before, but do not set it if the document
     // already existed
 
     // let's try to update "Final Fantasy", which already exists:
