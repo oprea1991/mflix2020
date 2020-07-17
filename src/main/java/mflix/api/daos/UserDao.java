@@ -22,9 +22,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
+import javax.swing.plaf.basic.BasicSpinnerUI;
 import java.text.MessageFormat;
 import java.util.Map;
+import java.util.Optional;
 
+import static com.mongodb.client.model.Updates.set;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
@@ -77,16 +80,19 @@ public class UserDao extends AbstractMFlixDao {
      * @param jwt    - jwt string token
      * @return true if successful
      */
-    public boolean createUserSession(String userId, String jwt) {
-        //TODO> Ticket: User Management - implement the method that allows session information to be
-        // stored in it's designated collection.
-        Session session = new Session();
+    public boolean createUserSession(
+            final String userId,
+            final String jwt) {
+        final Session session = new Session();
         session.setUserId(userId);
         session.setJwt(jwt);
-        sessionsCollection.insertOne(session);
+        if (Optional.ofNullable(sessionsCollection.find(Filters.eq("user_id", userId)).first())
+                .isPresent()) {
+            sessionsCollection.updateOne(Filters.eq("user_id", userId), Updates.set("jwt", jwt));
+        } else {
+            sessionsCollection.insertOne(session);
+        }
         return true;
-        //TODO > Ticket: Handling Errors - implement a safeguard against
-        // creating a session with the same jwt token.
     }
 
     /**
@@ -148,8 +154,27 @@ public class UserDao extends AbstractMFlixDao {
     public boolean updateUserPreferences(String email, Map<String, ?> userPreferences) {
         //TODO> Ticket: User Preferences - implement the method that allows for user preferences to
         // be updated.
+        System.out.println(email);
+        System.out.println(userPreferences);
+        if (userPreferences == null) {
+           throw  new IncorrectDaoOperation("usePreferences cannot be null");
+        }
+
+        Bson queryFilter = new Document("email",email);
+        Bson userPref = Updates.set("preferences",userPreferences);
+        System.out.println(queryFilter);
+        System.out.println(userPref);
+        UpdateResult res = usersCollection.updateOne(queryFilter, userPref);
+
+        /*Document userUpdate = new Document();
+        for ( Map.Entry<String, ?> mapset : userPreferences.entrySet()){
+           userUpdate.put(mapset.getKey(),mapset.getValue());
+        }
+        Bson u =userUpdate ;
+         usersCollection.updateOne(queryFilter,userUpdate);
+        // usersCollection.updateOne(queryFilter,userPref)*/;
         //TODO > Ticket: Handling Errors - make this method more robust by
         // handling potential exceptions when updating an entry.
-        return false;
+        return true;
     }
 }
