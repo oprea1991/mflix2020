@@ -28,7 +28,12 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
+import static com.mongodb.client.model.Filters.and;
+import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Updates.combine;
+import static com.mongodb.client.model.Updates.set;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
@@ -78,10 +83,14 @@ public class CommentDao extends AbstractMFlixDao {
     public Comment addComment(Comment comment) {
 
         // TODO> Ticket - Update User reviews: implement the functionality that enables adding a new
+        if (!Optional.ofNullable (comment.getId ()).isPresent ())
+            throw new IncorrectDaoOperation ("Comment should not be null");
+        commentCollection.insertOne(comment);
         // comment.
+
         // TODO> Ticket - Handling Errors: Implement a try catch block to
         // handle a potential write exception when given a wrong commentId.
-        return null;
+        return comment;
     }
 
     /**
@@ -99,6 +108,15 @@ public class CommentDao extends AbstractMFlixDao {
      */
     public boolean updateComment(String commentId, String text, String email) {
 
+//        commentCollection.updateOne (Filters.and ( "_id", new Object (commentId)))  ;
+        UpdateResult ur = null;
+        ur = commentCollection.updateOne(
+                Filters.and(
+                        Filters.eq("_id", new ObjectId(commentId)),
+                        Filters.eq("email", email)),
+                Updates.combine(
+                        Updates.set("text", text),
+                        Updates.set("date", new Date())));
         // TODO> Ticket - Update User reviews: implement the functionality that enables updating an
         // user own comments
         // TODO> Ticket - Handling Errors: Implement a try catch block to
@@ -117,9 +135,17 @@ public class CommentDao extends AbstractMFlixDao {
         // TODO> Ticket Delete Comments - Implement the method that enables the deletion of a user
         // comment
         // TIP: make sure to match only users that own the given commentId
+        if(!Optional.ofNullable ( commentId).isPresent ())
+        {
+            throw new IllegalArgumentException ("Comment should not be null");
+        }
+        DeleteResult dr = null;
+        dr = commentCollection.deleteOne (
+                and ( eq("_id", new ObjectId (commentId)),
+                      eq ("email",email)));
         // TODO> Ticket Handling Errors - Implement a try catch block to
         // handle a potential write exception when given a wrong commentId.
-        return false;
+        return dr.getDeletedCount ()>0;
     }
 
     /**
